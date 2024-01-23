@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <ul>
+                <li><i class="fa fa-bars fa-2x" aria-hidden="true" id="menu_burger"></i></li>
+                <li class="lien"><a href="">Notre Carte</a></li>
+                <li class="lien"><a href="">Le Coin Famille</a></li>
+                <li class="lien"><a href="">Recrutez-nous !</a></li>
+                <li class="lien"><a href="">Burger Kare</a></li>
+                <li><a href=""><img src="assets/img/logo_burger_king.png" alt="" width="40%"
+                            class="logo_burger_king"></a></li>
+                <li class="lien"><a href=""><img src="assets/img/maps-and-flags-4.png" alt=""></a></li>
+                <li class="lien"><a href=""><img src="assets/img/crown-2.png" alt=""></a></li>
+                <li><a href=""><span class="panier"><img src="assets/img/bag.png" alt=""> Clik & Collect</span></a></li>
+            </ul>
+
+        </nav>
+        <script src="assets/js/script.js" defer></script>
+        <div class="button">
+            <p><a href="">Je découvre</a></p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="titres">
+                <h1>Chaud bouillant !</h1>
+                <p>Découvrez les actualités Burger King®</p>
+            </div>
+            <div class="partie1">
+                <div class="col1">
+                    <img src="assets/img/img1.webp" alt="">
+                    <p>Fromage en éruptioon !</p>
+                </div>
+                <div class="col2">
+                    <img src="assets/img/img2.webp" alt="">
+                    <p>Cookie, ça va ?</p>
+                </div>
+                <div class="col3">
+                    <img src="assets/img/img3.webp" alt="">
+                    <p>C'est tout une histoire...</p>
+                </div>
+            </div>
+            <div class="avantages">
+                <p class="button2">Voir les avantages</p>
+            </div>
+        </section>
+        <section>
+            <div class="titres">
+                <h1>Une petite ou une grosse faim ? 🍔</h1>
+            </div>
+            <div class="partie2">
+                <div class="plat1">
+                    <p>Petit wrap chicken bbq<br> bacon</p>
+                    <img src="assets/img/plat-1.webp" alt="">
+                </div>
+                <div class="plat2">
+                    <p>King Fusion M&M's®</p>
+                    <img src="assets/img/plat-2.webp" alt="">
+                </div>
+                <div class="plat3">
+                    <p>VEGGIE CHICKEN<br> LOUISIANE STEAKHOUSE</p>
+                    <img src="assets/img/plat-3.webp" alt="">
+                </div>
+                <div class="plat4">
+                    <p>DOUBLE CHEESE BACON<br> XXL</p>
+                    <img src="assets/img/plat-4.webp" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="reservation">
+            <h2 class="title">Réservation</h2>
+            <form action="#" method="post" id="monFormulaire">
+                <div class="row2">
+                    <div class="input-group">
+                        <div class="name">
+                            <label for="name" class="entername"><i class="fa fa-user" aria-hidden="true"></i>Votre nom et
+                                prénom</label>
+                            <input type="text" id="name" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="time">
+                            <label for="time" class="entertime"><i class="fa-solid fa-clock" aria-hidden="true"></i>Votre
+                                heure de réservation</label>
+                            <div class="verifie">
+                                <input type="time" name="time" id="time" required>
+                                <p id="messageErreur" style="display: none; color: red;">L'heure saisie ne correspond pas aux horaires d'ouverture du restaurant.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="date" class="enterdate"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>Votre
+                        date de réservation</label>
+                    <div class="verifie">
+                        <input type="date" name="date" id="date" required>
+                        <p id="messageErreur" style="display: none; color: red;">La date de réservation doit être ultérieure à la date actuelle.</p>
+                    </div>
+                    
+                </div>
+                <div class="input-group">
+                    <label for="email"><i class="fa-solid fa-users" aria-hidden="true"></i>Nombre de personnes en
+                        tout</label>
+                    <select name="person" id="person">
+                        <option value="1">Tout(e) seul(e)</option>
+                        <option value="2">2 personnes</option>
+                        <option value="3">3 personnes</option>
+                        <option value="4">4 personnes</option>
+                        <option value="5">5 personnes ou plus</option>
+                    </select>
+                </div>
+                <button type="submit" id="monBouton" onclick="afficherMessage()">ENVOYER<i class="fa-solid fa-square-check"
+                        aria-hidden="true"></i></button>
+            </form>
+            <div id="messageErreur">Veuillez remplir le formulaire</div>
+        </section>
+    </main>
+    <footer>
+        <section class="section1">
+            <div class="socialMedias">
+                <div>
+                    <p>Qui nous aime, nous suive !</p>
+                    <ul>
+                        <li><a href=""><img src="assets/img/facebook-app-symbol-2.png" alt="" width="20%"></a></li>
+                        <li><a href=""><img src="assets/img/instagram-2.png" alt=""></a></li>
+                        <li><a href=""><img src="assets/img/twitter-2.png" alt=""></a></li>
+                        <li><a href=""><img src="assets/img/tik-tok-2.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="appli">
+                <div>
+                    <p>Le King dans votre poche</p>
+                    <div class="liens">
+                        <img src="assets/img/lien-apple-store.png" alt="">
+                        <img src="assets/img/lien-play-store.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="section2">
+            <div class="produits">
+                <p>Produits</p>
+                <ul>
+                    <li><a href="#">Catalogue produits</a></li>
+                    <li><a href="#">Nos burgers</a></li>
+                    <li><a href="#">Nos menus</a></li>
+                </ul>
+            </div>
+            <div class="famille">
+                <p>Famille</p>
+                <ul>
+                    <li><a href="#">Offre famille</a></li>
+                    <li><a href="#">King's Birthday</a></li>
+                    <li><a href="#">Menus enfants</a></li>
+                </ul>
+            </div>
+            <div class="conso">
+                <p>Service conso</p>
+                <ul>
+                    <li><a href="#">Besoin de parler ?</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Burger King vous écoute</a></li>
+                </ul>
+            </div>
+            <div class="informations">
+                <p>Informations légales</p>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">CGU Fidélité Kingdom</a></li>
+                    <li><a href="#">CGU Site et Service WIFI</a></li>
+                    <li><a href="#">Politique de protection des données personnelles</a></li>
+                    <li><a href="#">Signalement BK : réservé au personnel, fournisseurs, sous-traitants...</a></li>
+                </ul>
+            </div>
+            <div class="entreprise">
+                <p>L'entreprise</p>
+                <ul>
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="#">Devenir franchisé</a></li>
+                    <li><a href="#">Recrutement</a></li>
+                    <li><a href="#">Investisseurs</a></li>
+                    <li><a href="#">Burger Kare</a></li>
+                    <li><a href="#">Communiqués de presse</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="section3">
+            <ul>
+                <li><a href="">Mentions légales - CGU</a></li>
+                <li><a href="">CGV</a></li>
+                <li><a href="">Politiques de protection des données personnelles</a></li>
+                <li><a href="">Cookies</a></li>
+            </ul>
+            <p>Pour votre santé, mangez au moins cinq fruits et légumes par jour. <a href="#">www.mangerbouger.fr</a></p>
+            <p>Version 6.5.2</p>
+        </section>
+    </footer>
+</body>
+
+</html>
